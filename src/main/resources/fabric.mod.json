@@ -12,10 +12,10 @@
   "entrypoints": {
 
     "client": [
-      "net.creeperdev.morefood.client.MorefoodClient"
+      "johnseagull.morefood.client.MorefoodClient"
     ],
     "main": [
-      "net.creeperdev.morefood.Morefood"
+      "johnseagull.morefood.Morefood"
     ]
   },
   "depends": {

@@ -1,24 +1,23 @@
-package net.creeperdev.morefood;
+package johnseagull.morefood;
 
-import net.minecraft.ChatFormatting;
-import net.fabricmc.fabric.api.creativetab.v1.*;
 import net.minecraft.core.Registry;
-import net.minecraft.core.component.DataComponentType;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.ItemUseAnimation;
 import net.minecraft.world.item.component.Consumable;
 import net.minecraft.world.item.component.Consumables;
-import net.minecraft.world.item.component.ItemLore;
 import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
 
 import java.util.List;
@@ -37,7 +36,7 @@ public class ModItems {
         return item;
     }
     public static final Consumable GOLD_ROAST_COM = Consumables.defaultFood()
-
+            .consumeSeconds(3)
             .onConsume(new ApplyStatusEffectsConsumeEffect(new MobEffectInstance(MobEffects.REGENERATION, 6 * 20, 0), 1.0f))
             .build();
     public static final FoodProperties GOLD_ROAST_PRO = new FoodProperties.Builder()
@@ -56,7 +55,7 @@ public class ModItems {
     public static final Item MEAT_SKEWER_WEAK = register("meat_skewer_weak", Item::new, new Item.Properties().food(
             new FoodProperties.Builder()
                     .nutrition(4)
-                    .saturationModifier(0.3f)
+                    .saturationModifier(0.2f)
                     .build()
 
     ));
@@ -64,35 +63,35 @@ public class ModItems {
     public static final Item MEAT_SKEWER_MED = register("meat_skewer_med", Item::new, new Item.Properties().food(
             new FoodProperties.Builder()
                     .nutrition(6)
-                    .saturationModifier(0.4f)
+                    .saturationModifier(0.3f)
                     .build()
 
     ));
     public static final Item MEAT_SKEWER_STRONG = register("meat_skewer_strong", Item::new, new Item.Properties().food(
             new FoodProperties.Builder()
                     .nutrition(8)
-                    .saturationModifier(0.5f)
+                    .saturationModifier(0.4f)
                     .build()
 
     ));
     public static final Item COOKED_MEAT_SKEWER_WEAK = register("cooked_meat_skewer_weak", Item::new, new Item.Properties().food(
             new FoodProperties.Builder()
                     .nutrition(6)
-                    .saturationModifier(0.4f)
+                    .saturationModifier(0.5f)
                     .build()
 
     ));
     public static final Item COOKED_MEAT_SKEWER_MED = register("cooked_meat_skewer_med", Item::new, new Item.Properties().food(
             new FoodProperties.Builder()
                     .nutrition(8)
-                    .saturationModifier(0.5f)
+                    .saturationModifier(0.6f)
                     .build()
 
     ));
     public static final Item COOKED_MEAT_SKEWER_STRONG = register("cooked_meat_skewer_strong", Item::new, new Item.Properties().food(
             new FoodProperties.Builder()
                     .nutrition(12)
-                    .saturationModifier(0.6f)
+                    .saturationModifier(0.7f)
                     .build()
 
     ));
@@ -127,7 +126,7 @@ public class ModItems {
     public static final Item COOKED_GRAND_ROAST = register("cooked_grand_roast", Item::new, new Item.Properties().food(
             new FoodProperties.Builder()
                     .nutrition(16)
-                    .saturationModifier(0.8f)
+                    .saturationModifier(0.5f)
                     .build()
 
     ));
@@ -137,7 +136,7 @@ public class ModItems {
 
     public static final Item GOLDEN_CHOCOLATE = register("golden_chocolate", Item::new, new Item.Properties().food(
             new FoodProperties.Builder()
-                    .nutrition(14)
+                    .nutrition(8)
                     .alwaysEdible()
                     .saturationModifier(0.8f)
                     .build()
@@ -215,6 +214,26 @@ public class ModItems {
                     .build()
     ));
 
+
+    public static final Item APPLE_JUICE = register("apple_juice",Item::new,new Item.Properties().food(
+            new FoodProperties.Builder()
+                    .nutrition(4)
+                    .saturationModifier(0.5f)
+                    .alwaysEdible()
+                    .build(),
+            new Consumable(1, ItemUseAnimation.DRINK, SoundEvents.GENERIC_DRINK, false, List.of())
+    ).component(
+            DataComponents.MAX_STACK_SIZE,16
+    ));
+
+        public static final Item TOAST = register("toast",Item::new,new Item.Properties().food(
+                new FoodProperties.Builder()
+                        .nutrition(4)
+                        .saturationModifier(0.6f)
+                        .build()
+        ));
+
+
     public static final ResourceKey<CreativeModeTab> MOREFOOD_KEY = ResourceKey.create(
         Registries.CREATIVE_MODE_TAB,
         Identifier.fromNamespaceAndPath("morefood", "morefood")
@@ -258,6 +277,8 @@ public static final CreativeModeTab MOREFOOD = CreativeModeTab.builder(CreativeM
                 output.accept(ModItems.APPLE_PIE);
                 output.accept(ModItems.KELP_FISH);
                 output.accept(ModItems.COOKED_KELP_FISH);
+
+                output.accept(ModItems.APPLE_JUICE);
 
             })
             .build();

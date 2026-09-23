@@ -5,10 +5,10 @@
     "icon": {
       "id": "morefood:caramel"
     },
-    "title": "What smells so good?",
+    "title": "Someone burnt the sugar",
     "description": "Cook sugar to obtain caramel",
     "show_toast": true,
-    "announce_to_chat": false,
+    "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {

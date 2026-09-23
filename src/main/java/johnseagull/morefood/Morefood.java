@@ -1,4 +1,4 @@
-package net.creeperdev.morefood;
+package johnseagull.morefood;
 
 import net.fabricmc.api.ModInitializer;
 import org.apache.logging.log4j.LogManager;

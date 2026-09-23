@@ -8,7 +8,7 @@
     "title": "A caramel apple a day...",
     "description": "Craft a caramel apple",
     "show_toast": true,
-    "announce_to_chat": false,
+    "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {

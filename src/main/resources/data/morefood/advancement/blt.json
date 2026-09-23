@@ -8,14 +8,14 @@
     "title": "Sandwich",
     "description": "Make a sandwich from beef, kelp, and bread",
     "show_toast": true,
-    "announce_to_chat": false,
+    "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
     "weak": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "morefood:caramel"
+        "recipe_id": "morefood:sandwich"
       }
     }
   },

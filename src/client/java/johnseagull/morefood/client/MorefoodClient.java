@@ -1,4 +1,4 @@
-package net.creeperdev.morefood.client;
+package johnseagull.morefood.client;
 
 import net.fabricmc.api.ClientModInitializer;
 

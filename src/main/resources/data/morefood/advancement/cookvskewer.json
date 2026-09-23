@@ -5,10 +5,10 @@
     "icon": {
       "id": "morefood:cooked_veg_skewer"
     },
-    "title": "Get roasted",
+    "title": "Vegetarian-friendly",
     "description": "Cook a vegetable skewer with a stick, a potato, and a carrot",
     "show_toast": true,
-    "announce_to_chat": false,
+    "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {

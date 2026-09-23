@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smoking",
+  "group": "",
+  "category": "food",
+  "ingredient": "minecraft:apple",
+  "result": {
+    "id": "morefood:cooked_apple"
+
+  }
+}

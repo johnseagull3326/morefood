@@ -24,6 +24,8 @@
 "item.morefood.caramel": "Caramel",
 "item.morefood.caramel_apple": "Caramel Apple",  
 "item.morefood.apple_pie": "Apple Pie",  
-ad"item.morefood.caramel_candy": "Caramel Candy",
+"item.morefood.caramel_candy": "Caramel Candy",
+"item.morefood.apple_juice": "Apple Cider",
+"item.morefood.toast": "Toast",  
 "item.null.null": "null" 
 } 

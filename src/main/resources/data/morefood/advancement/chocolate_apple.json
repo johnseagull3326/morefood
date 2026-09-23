@@ -8,7 +8,7 @@
     "title": "A chocolate apple a day...",
     "description": "Craft a chocoalate apple",
     "show_toast": true,
-    "announce_to_chat": false,
+    "announce_to_chat": true,
     "hidden": false
   },
   "criteria": {
