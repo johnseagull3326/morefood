@@ -2,6 +2,7 @@
   "type": "minecraft:smelting",
   "group": "",
   "category": "food",
+ "cookingtime": 200,
   "ingredient": "minecraft:carrot",
   "result": {
     "id": "morefood:cooked_carrot"

@@ -1,6 +1,7 @@
 {
   "type": "minecraft:smoking",
   "category": "food",
+ "cookingtime": 200,
   "ingredient": "morefood:grand_roast",
   "result": {
     "id": "morefood:cooked_grand_roast"

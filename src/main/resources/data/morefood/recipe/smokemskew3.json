@@ -2,6 +2,7 @@
   "type": "minecraft:smoking",
   "group": "Meat Skewers",
   "category": "food",
+ "cookingtime": 200,
   "ingredient": "morefood:meat_skewer_strong",
   "result": {
     "id": "morefood:cooked_meat_skewer_strong"

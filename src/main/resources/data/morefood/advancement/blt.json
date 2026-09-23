@@ -15,7 +15,7 @@
     "weak": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "morefood:sandwich"
+        "recipes": "morefood:sandwich"
       }
     }
   },

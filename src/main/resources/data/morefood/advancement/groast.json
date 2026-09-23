@@ -6,7 +6,6 @@
     },
     "title": "Roasted",
     "description": "Cook grand roast with salt, meats, and a carrot",
-    "background": "minecraft:block/dark_oak_trapdoor",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
@@ -15,12 +14,12 @@
     "cook1": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "morefood:cookgroast"
+        "recipes": "morefood:cookgroast"
       }
     },"smoke1": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "morefood:smokegroast"
+        "recipes": "morefood:smokegroast"
       }
     }
   },

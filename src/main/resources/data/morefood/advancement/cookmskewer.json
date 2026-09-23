@@ -6,7 +6,6 @@
     },
     "title": "Well done!",
     "description": "Cook a meat skewer of each strength using a stick and two pieces of meat",
-    "background": "minecraft:block/dark_oak_trapdoor",
     "show_toast": true,
     "announce_to_chat": true,
     "hidden": false
@@ -15,32 +14,32 @@
     "cook1": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "morefood:cookmeatskew1"
+        "recipes": "morefood:cookmeatskew1"
       }
     },"smoke1": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "morefood:smokemskew1"
+        "recipes": "morefood:smokemskew1"
       }
     },"cook2": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "morefood:cookmeatskew2"
+        "recipes": "morefood:cookmeatskew2"
       }
     },"smoke2": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "morefood:smokemskew2"
+        "recipes": "morefood:smokemskew2"
       }
     },"cook3": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "morefood:cookmeatskew3"
+        "recipes": "morefood:cookmeatskew3"
       }
     },"smoke3": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
-        "recipe_id": "morefood:smokemskew3"
+        "recipes": "morefood:smokemskew3"
       }
     }
   },
