@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "group": "",
+  "category": "food",
+  "ingredient": "morefood:toast",
+  "result": {
+    "id": "morefood:toast",
+    "components": {
+      "minecraft:item_model": "morefood:toast_2"
+    }
+  }
+}
